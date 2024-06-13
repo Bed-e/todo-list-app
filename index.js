@@ -20,6 +20,9 @@ function handleAddTodo() {
   if (text !== "") {
     ul.appendChild(li);
   }
+
+  //
+  input.value = "";
 }
 
 //add event listener for button
