@@ -8,15 +8,18 @@ function handleAddTodo() {
   const ul = document.querySelector("ul");
 
   //create an li to go into my ul
-  newLi = document.createElement("li");
+  const li = document.createElement("li");
 
   //access the input element
   const input = document.querySelector("input");
-  text = input.value;
-  console.log(text);
+  let text = input.value;
   //set the input text to my li text
+  li.textContent = text;
 
   //append li to ul
+  if (text !== "") {
+    ul.appendChild(li);
+  }
 }
 
 //add event listener for button
